@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // function funcNumber (){
+        // let value = prompt("Введите число:");
+        // let zero = parseInt(0)
+
+        // if(value === null){
+        //     console.log("Вы нажали на отмену");
+
+        // } else if (value == zero){
+        //     console.log("Вы ввели 0");
+
+        // } else if(isNaN(value)){
+        //     console.log("Вы ввели не число");
+
+        // } else if (value > 0){
+        //     console.log('Ваше число положительное');
+        // } 
+        //   else if (value < 0){
+        //     console.log('Ваше число отрицательное');
+        // } else if(value === "")
+        //     console.log("Пустая строка");
+        // return value;
+        // }
+
+        // funcNumber();
+
+        // let cookingTime = function(eggs){
+        //     if (eggs === 0)return 0;
+        //     if (eggs > 8)  let result = Math.ceil(eggs);
+        //     if (result > 1){
+        //         result 
+        //     }
+        // };
+        
+
+        // let funcSelectNumber = function(...value){
+        //     let result = 0;
+        //     for(let i = 0; i < value.length; i++){
+        //         if(value[i] % 2 === 0){
+        //            result += value[i];
+        //         }
+        //     }
+        //     return result
+        // };
+        
+        // console.log(funcSelectNumber(1,5,4,8,10,76,40))
+
+
+
+        // let checkExam = function (ok,userAnswer){
+        //     let stat = 0;
+        //     for(let i = 0;i < ok.length;i++){
+        //         if(ok[i] === userAnswer[i]){
+        //             stat += 4
+        //         } else if(userAnswer[i] === ""){
+        //             stat += 0
+        //         } else {
+        //             stat--
+        //         }
+        //     }
+        //     if (stat < 0){
+        //         return  0;
+        //     } else{
+        //         return stat;
+        //     }  
+        // };
+        // console.log(checkExam(['a','b','c','a','d','a','b'],['a','d','c','a','b','a','c']))
+
+            // НЕ РАБОТАЕТ!!!
+
+        let middleArifNumber = function (...number){
+            let summa = 0;
+            for(let i = 0;i <= number.length;i++){
+                summa += number[i]
+            }
+            let result = summa / number.length
+            return result
+        };
+
+        console.log(middleArifNumber(12,4,0,6,7))
+
+    </script>
+</body>
+</html>

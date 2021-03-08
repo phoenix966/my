@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 class="title">Hello vanilla JS</h1>
+
+        <button class="button">button</button>
+        <button class="button">button</button>
+        <button class="button">button</button>
+        <button class="button">button</button>
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        let createElement = function (selector,tag,text){
+            let container = document.querySelector(selector)
+            let element = document.createElement(tag);
+            element.innerHTML = text;
+
+            container.append(element)
+        }
+    </script>
+    <script>
+
+       let title =  $('.title')
+       title.text('Hello jquery')
+       title.html('<u>Hello</u> jquery');
+
+       let buttons = $('.button');
+       buttons.text('new button')
+       
+       for(let i = 0;i<buttons.length;i++){
+            let btn = $(buttons[i]);
+            btn.html(btn.html() + "-" + (i + 1));
+       }
+
+       let btnNames = [
+           'send',
+           'reset',
+           'submit'
+       ]
+
+       for(let i=0;i<btnNames.length;i++){
+           let btn = $(buttons[i]);
+           let bname = btnNames[i];
+           btn.html(bname)
+       }
+    </script>
+</body>
+</html>

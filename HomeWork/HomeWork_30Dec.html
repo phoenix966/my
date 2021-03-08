@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script>
+        // let isAgree = confirm("Yes or no");
+        // if(isAgree){
+        //     alert("Yes")
+        // } else{
+        //     alert("No")
+        // }
+
+
+        // let art = prompt("Enter num");
+        
+        // if(isNaN(art)) {
+        //     alert("НЕ число");
+            
+        // } else {
+        //     alert("NUMBER");
+        // };
+
+        // let person = {
+        //     hair: 'red',
+
+        //     eyes: ['blue','gray'],
+
+        //     body:{
+        //         arm: 2,
+        //         foot: 2,
+        //         head: 1
+        //     },
+        //     goIn: function(num){
+        //         console.log("Function")
+        //     }
+
+        // }
+
+        // person.hair = 'blue'
+        // console.log(person.hair)
+
+        // let Array = [1,2,3,4]; 0,1,2,3
+
+        // for(let i = 3;i < Array.length;i =+2){   
+        //     console.log(Array[i])           // 0,1 
+        // }
+
+        // console.log(Array[0])
+
+        // let Enter = {
+        //     login: '' ,
+        //     pass: '',
+        //     addToLogin: function(){
+        //         let log = prompt("Введите логин: ")
+        //         if(log === null){
+        //             console.log("Вы отменили вход")
+        //         } else{
+        //         return this.login += log
+        //         }
+        //     },
+        //     addToPass: function(){
+        //         let password = prompt("Введите пароль: ")
+        //         if(password === null){
+        //             console.log("Вы отменили вход")
+        //         } else{
+        //         return this.pass += password
+        //         }
+        //     },
+        //     enterToSite: function(){
+        //         if(this.login === 'root'){
+        //             console.log("Правильно")
+        //             Enter.addToPass()
+        //             if(this.pass === 'secret'){
+        //                 alert("Добро пожаловать!")
+        //             } else{
+        //                 alert("Не правильный пароль")
+        //             }
+        //         }
+        //         else{
+        //             console.log("Выход")
+        //         }
+        //     } 
+             
+
+        // }
+        
+        // Enter.addToLogin()
+        // Enter.enterToSite()
+
+    // let shots = [
+    //         'попал',
+    //         'попал',
+    //         'промах',
+    //         'попал',
+    //         'промах',
+    //         'попал',
+    //         'прома',
+    //         'попал',
+    //         'промах'
+    //         ];
+    // let ok = 0;
+    // let no = 0;
+    // for(let value of shots ){
+    //     if(value === 'попал'){
+    //         ok++
+    //     } else{
+    //         no++
+    //     }
+    // };
+
+    // console.log(ok + " " + no);
+
+    // let symbol = prompt("Введите символ: ");
+    // let result = "";
+    // for( let i = 0; i < 7; i++){
+    //         result += '\n'
+    //     for(let j=0;j<21;j++){
+            
+    //         if(i === 3 && j === 11){
+    //             result += 'F';
+    //         }else{
+    //             result += symbol;
+    //         }
+    //     }
+    // }
+    
+    // console.log(result);
+
+    // let expression = function(a,b){
+    //     let answer = a * b                     // функция
+    //     return answer
+    // }
+
+
+
+    // let Calc = {
+    //     a: 0,
+    //     b: 0,
+    //     toGenerateRandom: function(){
+    //         let a = 0;
+    //         a = Math.floor(Math.random() * 9 + 1)
+    //         return a;
+    //     },
+    //     toCheckAnswer: function(){                    // Метод
+    //         this.a = this.toGenerateRandom()
+    //         this.b = this.toGenerateRandom()
+    //         let result = expression(this.a,this.b)
+    //         let Question = parseInt(prompt("Напишите ответ сколько будет" + this.a + " * " + this.b + ":"));
+    //         if(Question === result){
+    //                 alert("Правильно!")
+    //             } else{
+    //                 alert("Неправильно")
+    //             }
+    //     },
+    //     toCompleteExe: function(){
+    //         this.toCheckAnswer()
+    //     }
+        
+    // };
+    // // Calc.a = 67;
+    // Calc.toCheckAnswer()
+
+
+    // Calc.toWriteInRandom()
+    // Calc.toCheckAnswer()
+
+    // Calc.Object.toWriteInObject()
+    // console.log(Calc.Object.at)
+   
+    let Calculator = {
+        a: 0,
+        b: 0,
+        c: "",
+        toUmnojenie(){
+            let result = 0;
+            result = this.a * this.b;
+            return result
+        },
+        toDelenie(){
+            let result = 0;
+            result = this.a / this.b;
+            return result
+        },
+        toSumma(){
+            let result = 0;
+            result = this.a + this.b;
+            return result
+        },
+        toMinus(){
+            let result = 0;
+            result = this.a - this.b;
+            return result
+        },
+        userWriteInProperties(){
+            this.a = parseInt(prompt("Введите первое число: "))
+            this.b = parseInt(prompt("Введите второе число: "))
+            this.c = prompt("Введите действие (-,+,/,*): ")
+        },
+        toCheckUser(){
+            switch(this.c){
+        case '-':{
+            alert("Ваш результат: " + Calculator.toMinus())
+        }
+        break;
+        case '+':{
+            alert("Ваш результат: " + Calculator.toSumma())
+        }
+        break;
+        case '/':{
+            alert("Ваш результат: " + Calculator.toDelenie())
+        }
+        break;
+        case '*':{
+            alert("Ваш результат: " + Calculator.toUmnojenie())
+        }
+        break;
+    }
+    
+        }
+
+    }
+
+    Calculator.userWriteInProperties()
+    Calculator.toCheckUser()
+    
+    
+   
+
+
+    </script>
+</body>
+</html>

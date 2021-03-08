@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        // let Game = {
+        //     user: 0,
+        //     ai: 0,
+        //     player: 0,
+        //     pc: 0,
+        //     aiRandom(){
+        //         this.ai = Math.floor(Math.random() * 3 + 1)
+        //         },
+        //     userAnswerToNumber(){
+        //         let a = prompt('Введите свой ответ (камень,ножницы или бумага: ')
+        //         switch(a){
+        //             case 'камень':this.user = parseInt(1);
+        //             break;
+        //             case 'бумага':this.user = parseInt(3);
+        //             break;
+        //             case 'ножницы':this.user = parseInt(2);
+        //             break;
+        //             case 'завершить':this.user = parseInt(4)
+        //             break;
+        //             case '': this.user = parseInt(5)
+        //             break;
+        //             case null: this.user = parseInt(0)
+        //             break;
+        //         }
+        //     },
+        //     checkAnswer(){
+        //         for(;;){
+        //             this.aiRandom()
+        //             this.userAnswerToNumber()
+        //             for(;;){
+        //                 if(this.user === 4){
+        //                     console.log("Вот ваш счет:  ПК: " + this.pc + " Игрок: " + this.player )
+        //                     return;
+        //                 } else if(this.user === 0){
+        //                     console.log("Вы вышли");
+        //                     return;
+        //                 } else if(
+        //                 this.user === 2 && this.ai === 3 
+        //                 || this.user === 3 && this.ai === 1 
+        //                 || this.user === 1 && this.ai === 3){
+        //                     console.log("Пк поставил: " + this.ai);
+        //                     console.log("Ваш ответ: " + this.ai);
+        //                     this.player++;
+        //                     console.log("Вы выйграли");
+        //                     break;
+        //                 } else if(
+        //                 this.user === 2 && this.ai === 1 
+        //                 || this.user === 3 && this.ai === 2
+        //                 || this.user === 1 && this.ai === 3){
+        //                     console.log("Пк поставил: " + this.ai);
+        //                     console.log("Ваш ответ: " + this.ai);
+        //                     this.pc++;
+        //                     console.log("Вы проиграли");
+        //                     break;
+        //                 } else if(this.user === this.ai){
+        //                     console.log("Пк поставил: " + this.ai);
+        //                     console.log("Ваш ответ: " + this.ai);
+        //                     console.log("Ничья");
+        //                 } 
+                         
+        //             }
+        //         }
+        //     }
+        //     }
+                    
+        //     Game.checkAnswer()       
+                    
+        
+        // 0 = камень
+        // 1 = ножницы
+        // 2 = бумага
+        
+        // условия:
+        //     user                ai
+        //     ножницы 1           бумага  2   +
+        //     ножницы 1           камень  0   -
+        //     бумага  2           ножницы 1   -
+        //     бумага  2           камень  0   +
+        //     камень  0           ножницы 1   +
+        //     камень  0           бумага  2   -
+        //     если одно равно другому то ничья
+
+
+        let Game = {
+            tools: ['камень','ножницы','бумага'],
+            pc: '',
+            answer: '',
+            userScore: 0,
+            aiScore: 0,
+            getRandomNumber(max){
+                return Math.floor(Math.random() * max)
+            },
+            start(){
+                for(;;){
+                    this.pc = this.tools[this.getRandomNumber(this.tools.length)];
+                    console.log(this.pc)
+                    this.answer = prompt("Сделайте выбор между " + this.tools.join(' | '));
+                    if(this.answer === null){
+                            console.log('вы нажали отмену');
+
+                    break;} 
+                    this.checkAnswer()
+                }
+            },
+            checkAnswer(){
+                if(this.pc === this.answer){
+                    console.log("Ничья")
+                
+                } else if(this.answer === this.tools[1] && this.pc === this.tools[2]||
+                          this.answer === this.tools[2] && this.pc === this.tools[0]||
+                          this.answer === this.tools[0] && this.pc === this.tools[1]
+                ){
+                    this.userScore++
+                    console.log('Выйграл')
+                    
+                } else{
+                    console.log('проиграл')
+                    this.aiScore++
+                }
+              
+            }
+        }
+                    
+        Game.start(); 
+    </script>
+</body>
+</html>

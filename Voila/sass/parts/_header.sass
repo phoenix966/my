@@ -1,0 +1,142 @@
+.header
+    background-image: url(../img/bg.png)
+    background-size: cover
+    padding-top: rem(50px)
+    min-height: 100vh
+    &--margin
+        margin-bottom: rem(120px)
+    &__container
+        margin-bottom: 5%
+        padding: 0 10px
+        +media(1060px)
+            padding: 0 95px
+    &__row
+        display: flex
+        justify-content: space-between
+        align-items: center
+        +media(1040px)
+            align-items: unset
+    &__buttons
+        display: flex
+        flex-direction: column
+        +media(728px)
+            display: unset
+    &__logo
+        margin-right: rem(120px)
+    &__title
+        font-size: rem(52px)
+        line-height: rem(50px)
+        color: var(--color-lite)
+        font-weight: 700
+        font-family: var(--font-title)
+        text-align: center
+        margin-bottom:  rem(10px)
+    &__txt
+        font-size: rem(36px)
+        color: var(--color-lite)
+        font-weight: 700
+        font-family: var(--font-text)
+        text-align: center
+        margin-bottom: rem(50px)
+    &__btn
+        margin: 7px rem(12px)
+        +media(728px)
+            margin: 0 rem(12px)
+    &__btn--colored
+        background: var(--color-accent)
+        color: #ffffff
+    &__btn--transparent
+        background: #000000ce
+        border-color: #000000
+        color: #ffffff
+.nav
+    color: var(--color-lite)
+    letter-spacing: rem(1px)
+    display: flex
+    align-items: center
+    &--hide
+        visibility: hidden
+        position: absolute
+        z-index: -2
+        +media(1040px)
+            visibility: visible
+            position: unset
+            z-index: unset
+    &__list
+        display: flex
+    &__box
+        width: rem(118px)
+        min-height: rem(59px)
+        margin-right: rem(34px)
+    &__link
+        text-decoration: none
+        font-size: rem(14px)
+        letter-spacing: inherit
+        line-height: rem(24px)
+        color: inherit
+        font-weight: 700
+        font-family: var(--font-title)
+        text-transform: uppercase
+        &:hover
+            color: var(--color-accent)
+    &__text
+        font-size: rem(13px)
+        text-align: left
+        letter-spacing: inherit
+        line-height: rem(18px)
+        color: inherit
+        font-weight: 400
+        font-family: var(--font-italic)
+   
+.center__container
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    margin-bottom: rem(168px)
+.scroll
+    color: #ffffff
+    &:hover
+        transform: translateY(10px)
+        transition: 1s       
+    &__title
+        font-size: rem(14px)
+        line-height: rem(18px)
+        color: inherit
+        font-weight: 400
+        font-family: var(--font-title)
+        text-align: center
+        margin: rem(8px) auto
+        &:hover
+            color: var(--color-accent)
+            cursor: pointer
+    &__arrow
+        text-align: center
+        vertical-align: middle
+        margin: rem(8px) auto
+.mobile.is-active
+    visibility: hidden
+.hamburger
+    +media(1040px)
+        display: none
+.mobile
+    min-height: 100vh
+    position: absolute
+    left: 0
+    right: 0
+    top: 0 
+    z-index: 777
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background: #000000ec
+    &__box
+        margin: 8px auto
+    &__link
+        font-family: var(--font-title)
+        color: var(--color-accent)
+        font-size: rem(28px)
+        text-decoration: none
+        &:hover
+            color: var(--color-lite)

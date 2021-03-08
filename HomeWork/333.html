@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .message-danger{
+            padding: 1rem;
+            border: 1px solid #e9c6c6;
+            border-radius: 4px;
+            color: red;
+            background-color: #d1a7a7;
+        }
+    </style>
+
+    <h3>Это существующий заголовок</h3>
+
+    <script>
+        let message = document.createElement('div')
+        message.innerHTML = '<strong>Внимание </strong> спасибо за внимание!';
+        message.className = 'message message-danger';
+        document.querySelector('h3').before(message);
+        
+        message.remove();
+    </script>
+</body>
+</html>

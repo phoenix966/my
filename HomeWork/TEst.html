@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Конвертер температуры</h1>
+    <div class="form-group col-md-1 sm-12 ">
+        <label for="usr">Цельсий:</label>
+        <input type="text" class="form-control" id="celsius" onkeyup="celsiusToFahrenheit()">
+    </div>
+
+    <div class="form-group col-md-1 sm-12">
+        <label for="pwd">Фаренгейты:</label>
+        <input type="text" class="form-control" id="fahrenheit" onkeyup="fahrenheitToCelsius()">
+    </div>
+<script>
+    require('./render.js');
+
+    function celsiusToFahrenheit(){
+        let celsius = document.getElementById('celsius').value;
+        let fahrenheit = (celsius* 9/5) + 32;
+        document.getElementById('fahrenheit').value = fahrenheit;
+    }
+
+    function fahrenheitToCelsius(){
+        let fahrenheit = document.getElementById('fahrenheit').value;
+        let celsius = (fahrenheit-32)*5/9;
+        document.getElementById('celsius').value = celsius;
+    }
+
+
+
+</script>
+</body>
+</html>

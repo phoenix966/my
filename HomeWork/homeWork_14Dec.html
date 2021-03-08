@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol class="todo-list">
+        
+        
+    </ol>
+
+
+    <script>
+        let tasks = [
+        'Сходить в магазин',
+        'Приготовить обед',
+        'Поесть',
+        'Отдохнуть',
+        'Работать'
+        ]
+
+        // let newGo = document.createElement('li');
+
+        // let todo = document.querySelector('.todo-list');
+        // todo.append(newGo);
+        // newGo.textContent = 'ggggggg'
+
+        for(let i=0;i<tasks.length;i++){
+            let newGo = document.createElement('li');
+            let todo = document.querySelector('.todo-list');
+            todo.append(newGo);
+            newGo[i] = newGo.textContent += tasks[i]
+        }
+        
+        
+
+    </script>
+</body>
+</html>

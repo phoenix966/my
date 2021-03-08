@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // let num1 = prompt("Введите первое число: ");
+        // let num2 = prompt("Введите второе число: ");
+        // if ( isNaN(num1) || isNaN(num2)) {
+        //     alert("Введите числа ,а не буквы, начните сначала");
+        // } else if(num1 === "" || num2 === ""){
+        //     alert('Пустая строка')
+        // } 
+        // num1 = parseInt(num1);
+        // num2 = parseInt(num2);
+
+        // if (num1 < num2){
+        //     alert("Первое число меньше второго" );
+        // } else if(num1 > num2){
+        //     alert("Первое число больше второго");
+        // } else if(num1 === num2) {
+        //     alert("Числа равны");
+        // }
+
+    //     let symbol = prompt('Введите символ: ');
+    //     if(symbol.length > 1){
+    //         alert('Можно ввести только один символ')
+    //     } else {
+    //     let string = prompt('Введите строку: ');
+    //     let result = "";
+    //     for(let i = 0;i < 2; i++ ){ 
+    //         result += '\n'
+    //         if( i === 1){
+    //             result += symbol + " " + string + " " + symbol + '\n'
+    //         }
+    //         for(j=0;j < string.length + 4;j++){
+    //             result += symbol  
+    //         }
+    //     }
+    //     console.log(result);
+    //   }
+
+
+    // let number1 = Math.floor(Math.random() * 3 + 1);
+    // let number2 = Math.floor(Math.random() * 3 + 1);
+    // let number3 = Math.floor(Math.random() * 3 + 1);
+    // console.log(number1 + " " + number2 + " " + number3);
+    // if(number1 === number2 && number1 === number3){
+    //     console.log("%cВы выйграли",'color: green; ');
+    // } else {
+    //     console.log("%cПопробуйте еще раз!",'color: red; background: blue; font-size: 32px; padding: 20px 30px');
+    // }
+    
+
+    // let win = 0;
+    // let fault =0;
+    // for(;;) {
+    //     let num1 = Math.floor( Math.random() * 9 + 1); // где + 1 и * 9 это диапозон чисел
+    //     let num2 = Math.floor( Math.random() * 9 + 1); // Math.floor - округляет в меньшую сторону
+    //     let result = num1 * num2;
+    //     let answer = parseInt(prompt("Сколько будет: " + num1 + '*' + num2));
+    //     if (!answer){
+    //         alert("Вы отменили")
+    //         break;
+    //     }
+    //         else {
+    //             if(answer === result) {
+    //                 alert('Правильно это ' + result);
+    //                 win++
+    //         } else {
+    //                 alert('Неверно')
+    //                 fault++
+    //         }
+    //     }
+    // }       
+    // alert("Правильно: " + win + "\n" + "Неправильно: " + fault);    
+
+    let center = {
+        x: 5,
+        y: 5
+    }
+    let random1 = Math.floor(Math.random()* 10 + 1); 
+    let random2 = Math.floor(Math.random() * 10 + 1);
+
+    if(random1 < center.x && random2 < center.y){
+        console.log("Северо-запад NW");
+    } else if(random1 > center.x && random2 < center.y){
+        console.log("Северо-восток NE");
+    } else if(random1 < center.x && random2 > center.y){
+        console.log("Юго-запад SW");
+    } else if(random1 > center.x && random2 > center.y ){
+        console.log("Юго-восток SE");
+    } else if(random1 === center.x && random2 === center.y){
+        console.log("Вы попали в середину");
+    }
+    
+
+
+    </script>
+</body>
+</html>

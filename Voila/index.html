@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--margin">
+        <div class="container header__container">
+          <div class="header__row">
+            <div class="header__logo">
+              <img src="img/Voila_logo.svg" alt="logo" class="header__img">
+            </div>
+            <button class="hamburger hamburger--3dx" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <nav class="nav nav--hide">
+              <ul class="nav__list list--reset">
+                <li class="nav__box">
+                  <a href="#" class="nav__link">Menu</a>
+                  <p class="nav__text">Sit amet constetur adipisicing elit. Fugit perspiciatis.</p>
+                </li>
+                <li class="nav__box">
+                  <a href="#" class="nav__link">About</a>
+                  <p class="nav__text">Adipisicing elit. Fugit pipsam ratione numquam</p>
+                </li>
+                <li class="nav__box">
+                  <a href="#" class="nav__link">Events</a>
+                  <p class="nav__text">Ratione numquam lorem ipsum dolor sit amet tetur.</p>
+                </li>
+                <li class="nav__box">
+                  <a href="#" class="nav__link">Reservations</a>
+                  <p class="nav__text">Voluptates animi cupiditate similique sint.</p>
+                </li>
+                <li class="nav__box">
+                  <a href="#" class="nav__link">Contact</a>
+                  <p class="nav__text">Quis nemo odio saepe ullam vitae officiis delectus.</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <ul class="mobile is-active list--reset">
+          <li class="mobile__box"><a href="#" class="mobile__link">Menu</a></li>
+          <li class="mobile__box"><a href="#" class="mobile__link">About</a></li>
+          <li class="mobile__box"><a href="#" class="mobile__link">Events</a></li>
+          <li class="mobile__box"><a href="#" class="mobile__link">Reservations</a></li>
+          <li class="mobile__box"><a href="#" class="mobile__link">Contact</a></li>
+        </ul>
+        <div class="header__center">
+           <div class="container center__container">
+              <h1 class="header__title">Welcome to Voilà</h1>
+              <p class="header__txt">We offer mouth watering French cuisine</p>
+              <div class="header__buttons">
+                <a href="#" class="header__btn btn header__btn--colored">See Menu</a>
+                <a href="#" class="header__btn btn header__btn--transparent">Find a Table</a>
+              </div>
+           </div>
+           <div class="scroll">
+               <div class="container scroll__container">
+                  <h6 class="scroll__title">Scroll down for details</h6>
+                  <div class="scroll__arrow">
+                    <img src="img/Down-arrow.png" alt="arrow" class="scroll__img">
+                  </div>
+               </div>
+           </div>
+        </div>
+      </header>
+      <section class="post">
+
+          <div class="post__wrapper post__wrapper--flex">
+            <div class="post__block post__block--margin">
+                <h2 class="post__title">About Voila Restaurant</h2>
+                <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis lorem nec enim tempus viverra condimentum eget dui. Quisque ac ornare orci lacinia facilisis velit eget interdum.<br>
+                  <br>
+                  Quisque orci neque, euismod vitae turpis quis, accumsan iaculis velit. Nulla lacinia facilisis velit eget interdum.</p>
+                <a href="#" class="post__btn btn">Read more</a>
+            </div>
+
+            <div class="post__block post__block--large">
+                <img src="img/Glass.png" alt="post" class="post__img post__img--large">
+            </div>
+          </div>
+
+        <div class="post__wrapper post__wrapper--option">
+            <div class="post__block post__block--medium">
+                <img src="img/post_1.png" alt="post" class="post__img post__img--medium">
+            </div>
+
+            <div class="post__block post__block--small">
+              <img src="img/post_2.png" alt="post" class="post__img post__img--small">
+            </div>
+
+            <div class="post__block post__block--small">
+              <img src="img/post_3.png" alt="post" class="post__img post__img--small">
+            </div>
+
+        </div>
+      </section>
+      
+    </div>
+    <script>
+        // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var mobile = document.querySelector(".mobile");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    mobile.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+    </script>
+  </body>
+</html>

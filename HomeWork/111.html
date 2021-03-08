@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap"></div>
+
+    <script>
+        let title = document.createElement('h1');
+        title.textContent = 'Новый элемент';
+        title.style.color = 'tomato'
+
+        let wrap = document.querySelector('#wrap')
+        wrap.append(title) // добавляет в DOM
+
+        title = document.createElement('h3');
+        title.style.color = 'yellowgreen';
+
+        wrap.append(title);
+    </script>  
+</body>
+</html>

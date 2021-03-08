@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // let number = prompt("Введите число");
+        // console.log(number)
+        // if(isNaN(number)){
+        //    alert("Это не число") 
+        // }
+        
+        // let sayHello = function () {
+        // //Например
+        // alert('Hello World');   
+        // };  
+        // sayHello();
+
+        // let getRandomNumberFromOneTo = function (limit) {
+        //     return Math.floor( Math.random() * limit + 1);
+        // };
+
+        // let result = getRandomNumberFromOneTo(10);
+        // let result2 = getRandomNumberFromOneTo(1000);
+
+        // let askForNumber = function(message,min,max){
+        //     let number;
+
+        //     do{
+        //         number = parseInt(prompt(message));
+        //     } while (!number || number < min || number > max);
+        //     return number;
+
+        // };
+
+        // let grade = askForNumber("Укажите число от 1 до 10", 1,10);
+        // let grade2 = askForNumber("Укажите число от 2 до 20", 2,20);
+        // console.log(grade);
+// -----------------------------------------------------------
+        // let cows = 7;
+        // let chickens = 11;
+
+        // let cowString = String(cows);
+        // while(cowString.length < 3){
+        //     cowString = '0' + cowString;
+        // }
+        // console.log(cowString + 'Cows');
+
+        // let chickenString = String(chickens);
+        // while(chickenString.length < 3){
+        //     chickenString = '0' + chickenString;
+        // }
+        // console.log(chickenString + "chicken" );
+
+
+
+        // Рефакторинг с использованием функции 
+
+
+        let printFarmInventory = function (cows,chickens){
+            let cowString = String(cows);
+        while(cowString.length < 3){
+            cowString = '0' + cowString;
+        }
+        console.log(cowString + 'Cows');
+
+        let chickenString = String(chickens);
+        while(chickenString.length < 3){
+            chickenString = '0' + chickenString;
+        }
+        console.log(chickenString + "chicken" );
+
+        };
+
+        // создадим 2-ю функцию
+
+        let zeroFill = function(number,width) {
+            let string = String(number);
+            while(string.length < width){
+                string = '0' + string;
+            }
+            return string;
+        };
+
+        printFarmInventory(7,20)
+            
+
+    </script>
+</body>
+</html>

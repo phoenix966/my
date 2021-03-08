@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let phone ={
+            brand: 'iphone',
+            model: '12pro',
+            ram: '8Gb',
+            battery:'4000Mh',
+            price: 1100
+        };
+
+
+        // console.log(phone.model);
+
+        // let Laptop = {
+        //     brand: 'Asus',
+        //     model: 'Zephyrus',
+        //     price: '3000',
+        //     discount: '10',
+        //     getFullName: function(){
+        //         return this.brand + " " + this.model;
+        //     }
+        // }
+
+        // console.log(Laptop.getFullName())
+
+
+        // let Calculator = {
+        //     a: 0,
+        //     b: 0,
+        //     read: function(num1, num2){
+        //         this.a = num1;
+        //         this.b = num2;
+        //     },
+        //     sum: function (){
+        //         return this.a + this.b;
+        //     },
+        //     substract: function () {
+        //         return this.a - this.b;
+        //     },
+        //     multiply: function () {
+        //         return this.a * this.b;
+        //     },
+        //     divide: function () {
+        //         return this.a / this.b;
+        //     }   
+        // };
+
+        // Calculator.read(10,5)
+        //     НЕ доделал
+
+        let Dispenser = {
+            water: 20,
+            fillGlass: function (ml){
+                if(this.water > 0){
+                    this.water -= ml / 1000
+                    console.log("Емкость наполнена!");
+                } else {
+                    console.log("Диспенсер пуст");
+                }
+            }
+           
+        }
+
+        Dispenser.fillGlass(2000);
+        Dispenser.fillGlass(2000);
+        Dispenser.fillGlass(16000);
+        Dispenser.fillGlass(200);
+
+        // console.log(Dispenser.water)
+
+        let user = {
+            name: 'Mike',
+            lastname: 'Doe',
+            age: 20,
+            about: function() { return 'Мне ' + user.age + " лет" }
+        };
+
+        // console.log(user.age);
+        console.log(user.about());
+
+    </script>
+</body>
+</html>

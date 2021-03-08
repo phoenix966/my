@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMenu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+       <div class="top">
+           <div class="container swiper_container">
+                <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper__box">
+                            <p class="swiper__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo veniam assumenda blanditiis a magni facere, fugit aliquam autem aut nemo possimus doloribus facilis eum, dolores totam tempore rem voluptates enim earum quibusdam? Temporibus incidunt molestiae accusantium at modi vel totam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper__box">
+                            <p class="swiper__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo veniam assumenda blanditiis a magni facere, fugit aliquam autem aut nemo possimus doloribus facilis eum, dolores totam tempore rem voluptates enim earum quibusdam? Temporibus incidunt molestiae accusantium at modi vel totam.
+                            </p>
+                            <p class="swiper__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo veniam assumenda blanditiis a magni facere, fugit aliquam autem aut nemo possimus doloribus facilis eum, dolores totam tempore rem voluptates enim earum quibusdam? Temporibus incidunt molestiae accusantium at modi vel totam.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+           </div>
+           <section class="sidebar">
+                <h3 class="sidebar__title">New title</h3>
+                <p class="sidebar__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias reprehenderit voluptate asperiores minus dolorum cumque magni, omnis ab quasi molestiae ex cupiditate enim optio vel eius inventore laborum sequi velit?</p>
+                <p class="sidebar__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias reprehenderit voluptate asperiores minus dolorum cumque magni, omnis ab quasi molestiae ex cupiditate enim optio vel eius inventore laborum sequi velit?</p>
+                <p class="sidebar__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias reprehenderit voluptate asperiores minus dolorum cumque magni, omnis ab quasi molestiae ex cupiditate enim optio vel eius inventore laborum sequi velit?</p>
+           </section>
+       </div>
+
+    <section class="footer">
+        <button class="btn footer__btn">Start Game</button>
+        <button class="btn footer__btn">Update <span class="footer__elem"> &#8635;</span></button>
+    </section>
+
+   </div>
+    
+    
+    
+    <script src="JS/jquery.min.js"></script>
+    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+
+
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        
+        direction: 'horizontal',
+        loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        })
+</script>
+</body>
+</html> 

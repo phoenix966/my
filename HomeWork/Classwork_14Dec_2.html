@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="comments">
+        <li class="comment-item">Хороший коммент</li>
+        <li class="comment-item">Хороший коммент</li>
+        <li class="comment-item">Плохой коммент</li>
+        <li class="comment-item">Хороший коммент</li>
+    </ul>
+    
+    <ul class="trash-list"></ul>
+
+    <script src="js/jquery.js"></script>
+    <!-- <script>
+
+        let newElement = $('<div>').text('New Element')
+        $('body').append(newElement);
+    </script> -->
+
+    <script>
+    
+    let deleted = $('li:nth-child(3)').remove();
+    $('.trash-list').append(deleted);
+
+    $('li:nth-child(3)').appendTo()
+    
+    
+    </script>
+
+</body>
+</html>
