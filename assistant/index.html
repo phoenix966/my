@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="place">
+            <header class="header header--mix">
+                <div class="container header__container">
+                    <h1 class="header__title">Мой ассистент</h1>
+                    <button class="header__btn btn">Options</button>
+                </div>
+            </header>
+            <section class="info info--mix">
+                <div class="container info__container">
+                    <ul class="info__list">
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                        <li class="info__text"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="option active">
+                <div class="container">
+                    <form>
+                        <div class="form__wrap">
+                            <h2 class="option__title">Настройки ассистента</h2>
+                            <div class="option__wrap">
+                                <select class="option__select" name="voice" id="">
+                                    <option value="google">Google Voice</option>
+                                </select>
+                            </div>
+                            <div class="option__wrap">
+                                <label class="option__label" for="rate">Скорость:</label>
+                                <input class="option__range" id="rate" type="range" min="0" max="1" step="0.1" >
+                            </div>
+                            <div class="option__wrap">
+                                <label class="option__label" for="pitch">Питч</label>
+                                <input class="option__range" id="pitch" value="" type="range" min="0" max="1" step="0.1" >
+                            </div>
+                            <div class="option__wrap">
+                                <input type="text" id="text">
+                                <button class="option__btn" id="playBtn">Click</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="container footer__container">
+                    <button class="footer__btn btn">Call</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <h3 class="text">Выбор</h3>
+        <ul class="list">
+            <li class="list__text"></li>
+        </ul>
+    </div> -->
+    
+</body>
+</html>

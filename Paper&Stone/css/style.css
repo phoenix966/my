@@ -1,0 +1,155 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.body {
+  min-width: 320px;
+}
+
+.header--padding {
+  padding: 50px 0;
+}
+.header__info {
+  width: 94%;
+  min-height: 3.125rem;
+  background: #1a1919;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 3.125rem;
+}
+.header__text {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.9375rem;
+  color: #ffffff93;
+}
+.header__title {
+  font-family: Arial, sans-serif;
+  font-size: 1.375rem;
+  text-align: center;
+  padding: 0.9375rem;
+}
+.header__container {
+  border: 7px solid #181717;
+}
+
+.game {
+  margin-bottom: 6.25rem;
+}
+.game__block {
+  position: relative;
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 2px solid gray;
+}
+.game__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.game__text {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  background: #222222;
+  text-align: center;
+}
+.game__text--pos1 {
+  width: 60px;
+  position: absolute;
+  top: -40px;
+  right: 34%;
+  padding: 5px 3px;
+}
+.game__text--pos2 {
+  width: 100px;
+  position: absolute;
+  top: -40px;
+  right: 20%;
+  padding: 5px 10px;
+}
+.game__picture {
+  width: 160px;
+  height: 160px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: 2.5rem;
+}
+.game__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.game__score {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  background: #1d1b1b;
+  color: #887b7b;
+  padding: 0.25rem 0.3125rem;
+  border: 1px solid #181717;
+  text-align: left;
+  border-radius: 3px;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: center;
+}
+.nav__btn {
+  width: 150px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #1a1919;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.nav__btn:hover {
+  background: #272424;
+}
+.nav__btn:nth-last-child(1) {
+  background: green;
+  margin-right: 0;
+}
+.nav__btn:nth-last-child(1):hover {
+  background: #e01515bd;
+}
+.nav__img {
+  width: 100%;
+  height: 100%;
+}
+.nav__box {
+  max-width: 32px;
+  max-height: 32px;
+  margin-bottom: 6px;
+}
+.nav--margin {
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

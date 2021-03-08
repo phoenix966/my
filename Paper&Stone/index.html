@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper_&_Stone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header header--padding">
+            <div class="container header__container">
+                    <h1 class="header__title">Добро пожаловать в Paper&Stone v 0.7b</h1>
+                <div class="header__info">
+                    <p class="header__text">Жду игроков!</p>
+                </div>
+            
+            <div class="game">
+                <div class="container game__container">
+                    <div class="game__block">
+                            <h5 class="game__text game__text--pos1">Вы</h5>
+                        <div id="user" class="game__picture">
+                            
+                        </div>
+                        <p class="game__score game__score--user">Cчет: </p>
+                    </div>
+                    <div class="game__block">
+                            <h5 class="game__text game__text--pos2">Противник</h5>
+                            <div id="comp" class="game__picture">
+                                
+                            </div>
+                            <p class="game__score game__score--ai">Cчет: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav nav--margin">
+                <div class="container">
+                    <div class="nav__row">
+                        <button class="nav__btn btn"><div class="nav__box"><img class="nav__img" src="img/paper.png" alt="paper"></div> Бумага</button>
+                        <button class="nav__btn btn"><div class="nav__box"><img class="nav__img" src="img/stone.png" alt="stone"></div> Камень</button>
+                        <button class="nav__btn btn"><div class="nav__box"><img class="nav__img" src="img/cut.png" alt="cut"></div> Ножницы</button>
+                        <button class="nav__btn btn">Играть</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
