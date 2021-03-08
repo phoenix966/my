@@ -1,0 +1,193 @@
+.container__header
+    +flex($cross: center)
+    margin-bottom: rem(210px)
+.header
+    background: url(../img/1x/Bg-1.jpg) center bottom
+    background-size: cover
+    background-repeat: no-repeat
+    min-height: 100vh
+    padding-bottom: rem(150px)
+    box-sizing: border-box
+    min-width: 100%
+    padding-top: rem(45px)
+    position: relative
+    +media(576px)
+        background: url(../img/2x/Bg-1.jpg) center bottom
+        background-size: cover
+        background-repeat: no-repeat
+    &--mod
+        margin-bottom: rem(175px)        
+    &__link
+        font-family: var(--font-bolder)
+        font-size: rem(16px)
+        letter-spacing: rem(1px)
+        font-weight: 700
+        text-transform: uppercase
+        color: #f9fafe
+        border-bottom: 3px solid #ffffff00
+        margin-right: rem(20px)
+        &:hover
+            border-color: var(--color-accent)
+            transition: all 0.6s
+    &__btn
+        border: 1px solid #f9fafe
+        border-radius: 5px
+        color: #f9fafe
+        &:hover
+           color: var(--color-accent) 
+           border-color: var(--color-accent) 
+           transition: all 0.6s
+    &__nav
+        margin-left: auto
+    &__title
+        font-family: var(--font-bolder)
+        color: var(--color-other)
+        font-weight: bold
+        font-size: rem(36px)
+        text-align: center
+        text-transform: uppercase
+        +media(576px)
+            letter-spacing: rem(6px)
+            line-height: rem(64px)
+            margin-bottom: rem(40px)
+            font-size: rem(72px)
+    &__top
+        margin-bottom: rem(88px)
+    &__title-sm
+        font-family: var(--font-regular)
+        color: var(--color-other)
+        font-weight: regular
+        font-size: rem(15px)
+        text-align: center
+        text-transform: uppercase
+        +media(576px)
+            font-size: rem(30px)
+            letter-spacing: rem(1px)
+    &__search
+        margin-bottom: rem(230px)
+
+    &__form
+        width: 40%
+        height: 40%
+        margin: auto
+    &__list
+        display: flex
+        justify-content: center
+        align-items: center
+        background: white
+        padding: rem(6px) rem(20px)
+    &__input
+        border-radius: 5px
+        border: 1px solid gray
+        font-family: var(--font-regular)
+        color: var(--color-dark)
+        font-size: rem(16px)
+        margin-bottom: rem(10px)
+        outline: none
+        padding: rem(5px) rem(3px)
+    &__box
+        width: rem(120px)
+        height: rem(120px)
+        padding-top: rem(50px)
+    &__pic
+        width: 100%
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content
+    width: 33%
+.mfp-fade.mfp-bg 
+  opacity: 0
+  -webkit-transition: all 0.5s ease-out
+  -moz-transition: all 0.5s ease-out
+  transition: all 0.5s ease-out
+.mfp-fade.mfp-bg.mfp-ready 
+  opacity: 0.8
+.mfp-fade.mfp-bg.mfp-removing 
+  opacity: 0
+.mfp-fade.mfp-wrap .mfp-content 
+  opacity: 0
+  -webkit-transition: all 0.5s ease-out
+  -moz-transition: all 0.5s ease-out
+  transition: all 0.5s ease-out
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+  opacity: 1
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+  opacity: 0
+.mfp-close
+    visibility: hidden
+
+.mobile
+    position: absolute
+    top: 0
+    left: 0
+    +flex(center,center)
+    flex-direction: column
+    width: 100%
+    height: 100vh
+    z-index: 520
+    background: #0e0404f3
+    visibility: hidden
+    &.is-active
+        visibility: visible
+    &__link
+        color: white
+        text-transform: uppercase
+        font-size: rem(18px)
+        &:hover
+            color: var(--color-accent)
+    &--margin
+        margin: rem(20px) auto    
+
+.nav--hide
+    visibility: hidden
+    width: 0
+    height: 0
+    +media(960px)
+        visibility: visible
+        width: auto
+        height: auto
+.hamburger
+    +media(960px)
+        visibility: hidden
+
+.search
+    &__btn
+        font-weight: bold
+        width: rem(70px)
+        box-sizing: border-box
+        +media(780px)
+            width: rem(220px)
+
+    &-txt--hide
+            font-family: var(--font-bolder)
+            color: #ffffff
+            position: absolute
+            z-index: -2
+            +media(780px)
+                position: static
+    &__wrap
+        +flex(center,center)
+        border-radius: 10px
+        margin: 0 auto
+        +media(558px)
+            width: 80%
+        +media(992px)
+            width: 70%
+    &__input
+        width: 100%
+        border: none
+        height: rem(57px)
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+        font-family: var(--font-text)
+        color: #717171
+        font-weight: regular
+        font-size: rem(14px)
+        text-transform: uppercase
+        padding-left: rem(30px)
+        outline: none
+    &--hide
+        font-size: 0
+        +media(992px)
+            font-size: rem(14px)
+

@@ -1,0 +1,68 @@
+.footer
+    padding-bottom: rem(10px)
+    background: #404040
+    padding-top: rem(50px)
+    min-height: 40vh
+    &__border
+        width: 100%
+        height: rem(6px)
+        background: #e7434e
+        background-image: repeating-linear-gradient(-45deg,transparent,transparent 5px,#191654 5px,#191654 10px)       
+    &__wrap
+        +media(728px)
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+    &--flex
+        margin-bottom: rem(20px)
+        +media(728px)
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+    &__link
+        font-family: var(--font-regular)
+        font-weight: regular
+        font-size: rem(14px)
+        color: #ffffff
+        margin-bottom: rem(15px)
+    &__social
+        display: flex
+    &__icon
+        width: rem(44px)
+        height: rem(44px)
+        text-align: center
+        line-height: 2.75rem
+        margin-right: rem(20px)
+        box-sizing: border-box
+        background: #717171
+        color: #ffffff
+        border-radius: 50%
+    &--search
+        margin-bottom: 0
+    &--wrap
+        width:100%
+        margin: rem(24px) auto rem(35px) auto
+    &--input
+        height: rem(40px) 
+        outline: none
+    &--btn
+        height: rem(42px)
+        padding-top: rem(5px)
+        text-align: center
+        font-family: var(--font-regular)
+        font-weight: regular
+        font-size: 0
+        +media(780px)
+            padding-top: rem(1px)
+            font-size: rem(14px)
+    &--style
+        font-family: var(--font-bold)
+        font-weight: bold
+        font-size: rem(14px)
+        margin-bottom: rem(25px)
+    &__subscribe
+        font-size: rem(14px)
+        +media(780px)
+            font-size: 0
+    &__valid
+        font-size: 0

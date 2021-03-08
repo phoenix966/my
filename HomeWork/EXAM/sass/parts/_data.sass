@@ -1,0 +1,35 @@
+
+
+.container__data
+    margin-bottom: rem(100px) 
+    
+    +media(728px)
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-gap: rem(20px)
+            
+.data
+    text-align: center
+    &--mod
+        margin-bottom: rem(85px)
+    &__box
+        display: flex
+    &__text
+        font-family: var(--font-regular)
+        font-size: rem(16px)
+        color: #ffffff
+    &--margin
+        margin-right: rem(10px)  
+    &__wrap
+        position: relative
+        margin-bottom: rem(20px)
+        vertical-align: middle
+        border-radius: 5px
+        overflow: hidden
+        &:hover
+            +media(728px)
+                box-shadow: 14px 11px 11px 0px rgba(0,0,0,0.6)
+                transition: all 0.6s 
+        +media(728px)
+            margin-bottom: 0     
